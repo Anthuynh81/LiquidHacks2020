@@ -1,0 +1,63 @@
+h2{
+    color: white;
+    text-align: center;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.title{
+    font-size: 50px;
+    text-align: center; 
+}
+
+.background{
+    background-color: #0a1723;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column{
+    float: left;
+    width: 33.33333%;
+    padding: 0px;
+}
+
+.column.middle{
+    width: 50%;
+}
+
+.column.nav{
+    width: 25%;
+}
+
+.logo{
+    width: 100px;
+    height: 75px;
+}
+
+.logo.horse{
+    padding-top: 5px;
+    margin-bottom: -25px;
+    width: 40px;
+    height: 40px;
+}
+
+.animation{
+    display: inline;
+    animation:horses 10s linear infinite;
+    position: relative;
+}
+
+@keyframes horses {
+    0%   {left:-10%;}
+    100% {left:110%;}
+  }
+  
